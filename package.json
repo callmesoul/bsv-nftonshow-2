@@ -68,7 +68,7 @@
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "4",
     "eslint-plugin-vue": "~7",
-    "postcss": "~8.3",
+    "postcss": "~8.4",
     "postcss-nesting": "~8.0",
     "postcss-pxtorem": "^6.0.0",
     "prettier-stylelint": "^0.4.2",
