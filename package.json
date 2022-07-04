@@ -3,14 +3,8 @@
   "version": "0.1.0",
   "scripts": {
     "dev": "vite --mode dev",
-    "test": "vite --mode test",
-    "gray": "vite --mode gray",
     "prod": "vite --mode prod",
     "build": "vite build --mode dev",
-    "build:test": "vite build --mode test",
-    "build:gray": "vite build --mode gray",
-    "build:prod": "vite build --mode prod",
-    "build:rouxi": "vite build --mode rouxi",
     "start": "yarn dev & wait-on tcp:3000 -v",
     "test:ci": "cypress run --headless"
   },
