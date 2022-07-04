@@ -1,0 +1,85 @@
+@import '@/assets/styles/var.scss';
+
+.user-series {
+    background: #fff;
+}
+
+.user-series-item {
+    border-radius: 12px;
+    border: 1px solid #EDEFF2;
+    overflow: hidden;
+    margin-bottom: 20px;
+    cursor: pointer;
+
+    &:hover {
+        border-color: $mainColor;
+    }
+
+    .cover {
+        width: 100%;
+        height: 0;
+        padding-bottom: 50%;
+        position: relative;
+
+        img {
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            position: absolute;
+            object-fit: cover;
+        }
+    }
+
+    .cont {
+        padding: 20px;
+
+        .name {
+            font-size: 20px;
+            
+
+            img {
+                width: 13px;
+                height: 13px;
+                margin-left: 5px;
+            }
+        }
+
+        .drsc {
+            margin-top: 10px;
+            font-size: 16px;
+            color: #606266;
+            line-height: 27px;
+            height: 54px;
+            @include text-many-ellipsis(2);
+        }
+
+        .nft-list {
+            margin-top: 20px;
+
+            a {
+                display: inline-block;
+                width: calc((100% - 45px) / 4);
+                margin-right: 15px;
+                height: 0;
+                padding-bottom: calc((100% - 45px) / 4);
+                position: relative;
+                cursor: pointer;
+
+                &:last-child {
+                    margin-right: 0;
+                }
+
+                img {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    left: 0;
+                    top: 0;
+                    object-fit: contain;
+                    background: #000;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,46 @@
+.el-dialog__header {
+    .payModeDialogTitle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        span {
+            font-size: 16PX;
+        }
+    }
+
+}
+
+
+.payModeDialogBody {
+    display: flex;
+    flex-direction: column;
+
+
+    .radioGroud {
+        div {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 18px;
+            margin-bottom: 30px;
+
+            &:deep(.el-radio__label) {
+                display: none;
+            }
+
+            &:deep(.el-radio__inner) {
+                width: 18px;
+                height: 18px;
+
+                &::after {
+                    width: 6px;
+                    height: 6px;
+                }
+            }
+        }
+    }
+
+
+}

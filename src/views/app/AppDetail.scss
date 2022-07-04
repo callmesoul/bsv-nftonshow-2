@@ -1,0 +1,65 @@
+@import './Apps.scss';
+
+.app-detail {
+    padding: 18px;
+    background: #fff;
+
+
+    .app-base-info {
+        .logo {
+            width: 80px;
+            height: 80px;
+            border: 1px solid #F2F4F7;
+            border-radius: 12px;
+            margin-right: 12px;
+        }
+
+        .cont {
+            .title {
+                font-size: 18px;
+                font-weight: bold;
+            }
+
+            .drsc {
+                font-size: 14px;
+                color: #909399;
+                margin-top: 8px;
+            }
+        }
+    }
+
+    .labels {
+        margin-top: 18px;
+
+        span {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 17px;
+            background: #FFF7DC;
+            color: #FFAE14;
+            font-size: 12px;
+        }
+    }
+
+    .detail-section {
+        margin-top: 18px;
+
+        .name {
+            font-size: 14px;
+            color: #909399;
+        }
+
+        .cont {
+            margin-top: 8px;
+
+            .detail-section-cont {
+                a {
+                    color: #5173B9;
+                    font-size: 14px;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+
+}

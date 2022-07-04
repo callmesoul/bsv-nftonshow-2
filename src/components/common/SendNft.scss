@@ -1,0 +1,193 @@
+@import '@/assets/styles/var.scss';
+
+.el-dialog__header {
+    .sendNftDialogTitle {
+        span {
+            font-size: 18px;
+        }
+    }
+}
+
+.sendNftWrap {
+    .home {
+        display: flex;
+        flex-direction: column;
+
+        .ImgWrap {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            &:deep(.el-image) {
+                width: 300px;
+                height: 300px;
+                border-radius: 8px;
+            }
+
+            span {
+                margin-top: 20px;
+                font-size: 16px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+        }
+
+        .operate {
+            margin-top: 30px;
+
+            :deep(.el-input__inner) {
+                border: none;
+                background-color: #F5F7F9;
+                border-radius: 8px;
+                padding: 25px 15px;
+            }
+
+            :deep(.el-button) {
+                margin-top: 20px;
+                color: #fff;
+                width: 100%;
+                background-color: #FCA63D;
+            }
+
+            .btnGray {
+                background-color: #FCA63D;
+                opacity: .5;
+            }
+        }
+    }
+
+    .sendDetail {
+        display: flex;
+        flex-direction: column;
+
+        .top {
+            padding-bottom: 20px;
+            border-bottom: 1px solid #F5F7F9;
+            display: flex;
+            flex-direction: row;
+
+            .left {
+                &:deep(.el-image) {
+                    width: 100px;
+                    height: 100px;
+                    border-radius: 8px;
+                }
+            }
+
+            .right {
+                margin-left: 10px;
+                display: flex;
+                flex-direction: column;
+
+                .nftName {
+                    font-size: 16px;
+                    margin-bottom: 10px;
+                }
+
+                .issuerInfo {
+
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+
+                    .avatar {
+                        width: 24px;
+                        height: 24px;
+                        margin-right: 6px;
+                    }
+
+                    .issuer {
+                        font-size: 12px;
+                        color: #606266;
+                        display: flex;
+                        flex-direction: row;
+                        flex-wrap: nowrap;
+
+                        span:nth-child(1) {
+                            @extend %text-ellipsis;
+                            max-width: 65%;
+                        }
+
+                        span:nth-child(2) {}
+                    }
+
+
+                }
+            }
+        }
+
+        .center {
+            display: flex;
+            flex-direction: column;
+            margin-top: 20px;
+
+            .sender {
+                span {
+                    font-size: 14px;
+                    color: #909399;
+                }
+
+                .receviceInfo {
+                    margin-top: 10px;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+
+                    .left {
+                        margin-right: 10px;
+
+                        .avatar {
+                            width: 40px;
+                            height: 40px;
+                        }
+                    }
+
+                    .right {
+                        display: flex;
+                        flex-direction: column;
+
+                        span:nth-child(1) {
+                            font-size: 14px;
+                        }
+
+                        span:nth-child(2) {
+                            font-size: 12px;
+                            color: #909399;
+                            margin-top: 5px;
+                        }
+
+                    }
+                }
+            }
+
+            .recevice {
+                margin-top: 20px;
+                font-size: 14px;
+                display: flex;
+                flex-direction: column;
+
+                span:nth-child(1) {
+
+                    color: #909399;
+                }
+
+                span:nth-child(2) {
+
+                    margin-top: 10px;
+                }
+            }
+        }
+
+        .foot {
+            margin-top: 20px;
+
+            &:deep(.el-button) {
+                width: 100%;
+                background-color: #FCA63D;
+                color: #fff;
+            }
+        }
+    }
+}

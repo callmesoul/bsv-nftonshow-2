@@ -1,0 +1,52 @@
+.advantage {
+    .title {
+        text-align: center;
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    .advantage-section {
+        margin-top: 60px;
+
+        .advantage-section-title {
+            line-height: 24px;
+
+            .dot {
+                width: 8px;
+                height: 8px;
+                background: #FFC86E;
+                margin-right: 8px;
+                vertical-align: middle;
+            }
+
+            .value {
+                font-weight: bold;
+                font-size: 20px;
+            }
+        }
+
+        .cont {
+            margin-left: 16px;
+
+            p {
+                font-size: 16px;
+                line-height: 36px;
+                margin-bottom: 30px;
+                line-height: 36px;
+
+                img {
+                    width: 375px;
+
+                    &.block {
+                        width: 100%;
+                        display: block;
+                    }
+                }
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}

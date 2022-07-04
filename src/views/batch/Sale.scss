@@ -1,0 +1,106 @@
+@import './Create.scss';
+
+
+.batch-sale-drsc {
+    a {
+        color: #456FC4;
+    }
+}
+
+.batch-create {
+    .input-item {
+        :deep(.el-datetime) {
+            width: 100%;
+
+            .el-input__inner {
+                border: none;
+                outline: none;
+            }
+
+        }
+
+        .all-amount {
+            width: 150px;
+        }
+    }
+
+
+    .batch-create-list {
+
+        .batch-create-item {
+            background: #eee;
+
+            input,
+            textarea {
+                border-radius: 0;
+
+                &.disabled {
+                    background: #f5f7fa;
+                    cursor: not-allowed;
+                }
+            }
+
+
+
+
+            &.un-selected {
+                background: #bfc2cc;
+            }
+        }
+    }
+}
+
+.disabled {
+    cursor: not-allowed;
+}
+
+.same-sale-drsc {
+    padding: 10px;
+    background: #fff;
+    margin-top: 15px;
+
+    .name {
+        margin-right: 5px;
+        line-height: 40px;
+    }
+
+    .el-switch {
+        margin-top: 10px;
+    }
+
+    .el-datetime {
+        margin-left: 15px;
+    }
+
+    .textarea {
+        margin-left: 15px;
+        padding: 10px;
+        border: 1px solid #eee;
+        border-radius: 6px;
+
+        textarea {
+            border: none;
+            outline: none;
+            width: 100%;
+            max-width: 100%;
+            min-width: 100%;
+            min-height: 150px;
+        }
+
+        .confirm {
+            text-align: right;
+        }
+    }
+}
+
+
+@media only screen and (max-width: 750px) {
+    .section-bottm {
+        flex-direction: column;
+
+        // .sellTime {
+    //     flex-direction: column;
+    // }
+    }
+
+}

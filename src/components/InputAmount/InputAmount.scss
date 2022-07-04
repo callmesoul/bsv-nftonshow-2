@@ -1,0 +1,39 @@
+@import '@/assets/styles/var.scss';
+
+.input-amount {
+    overflow: hidden;
+    background: #fff;
+
+    input {
+        border: none;
+        outline: none;
+        padding: 10px;
+
+        &.disabled {
+            background: #f5f7fa;
+            cursor: not-allowed;
+        }
+    }
+
+    :deep(.el-select) {
+        width: 70px;
+        height: auto !important;
+        line-height: normal !important;
+
+        .el-input__inner {
+            padding-right: 26px;
+            padding-left: 0;
+            text-align: right;
+            border: none;
+            height: auto !important;
+            line-height: normal !important;
+            box-shadow: none;
+        }
+
+        .el-select__caret {
+            color: $mainFontColor;
+            height: auto !important;
+            line-height: normal !important;
+        }
+    }
+}

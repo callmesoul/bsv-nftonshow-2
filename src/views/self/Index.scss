@@ -1,0 +1,19 @@
+@import '@/assets/styles/var.scss';
+
+
+
+.record-tab {
+  a {
+    font-size: 18px;
+    color: #909399;
+    margin-right: 24px;
+
+    &.active {
+      color: #303133;
+    }
+  }
+}
+
+
+
+

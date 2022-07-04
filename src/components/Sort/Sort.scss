@@ -1,0 +1,35 @@
+@import '@/assets/styles/var.scss';
+
+
+.sort-warp {
+    .sort-item {
+        background: #fff;
+        border-radius: 6px;
+        cursor: pointer;
+        margin-right: 10px;
+
+        &.active {
+            background: $mainColor;
+            color: #fff;
+
+            svg {
+                fill: #fff;
+            }
+        }
+
+        .sort-name {
+            font-size: 14px;
+            padding: 8px;
+        }
+
+        .sort-type {
+            padding: 8px 5px;
+            border-left: 1px solid #eee;
+
+            svg {
+                width: 14px;
+                height: 14px;
+            }
+        }
+    }
+}

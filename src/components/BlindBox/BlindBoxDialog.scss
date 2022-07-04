@@ -1,0 +1,140 @@
+@import '@/assets/styles/var.scss';
+
+
+
+.blindBoxDialogTitle {
+    font-size: 18px;
+}
+
+.blindBoxDialogBody {
+    flex-direction: column;
+
+    .top {
+        justify-content: center;
+        align-items: center;
+        padding: 10px 0;
+        background-image: url('@/assets/images/emb_color.svg');
+        background-size: cover;
+
+        span {
+            font-size: 18px;
+            color: #5173B9;
+        }
+    }
+
+    .blindboxImgWrap {
+        padding: 24px;
+        justify-content: center;
+        align-items: center;
+
+
+        img {
+            width: 240px;
+            height: 240px;
+        }
+
+    }
+
+
+
+    .issuerWrap {
+
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+
+        .issuer {
+            display: flex;
+            font-size: 14px;
+            color: #909399;
+            width: 50%;
+        }
+
+        .author {
+            position: relative;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+
+            .mask {
+                position: absolute;
+                height: 100%;
+            }
+
+            .avatar {
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+                margin-right: 10px;
+                background: #fff;
+
+                &.hasmask {
+                    border-radius: unset;
+                }
+            }
+
+            .username {
+
+                font-size: 14px;
+                font-weight: 400;
+
+            }
+
+            .cert-icon {
+                width: 18px;
+                height: 18px;
+                margin-left: 5px;
+            }
+        }
+    }
+
+    .contactAddress {
+        margin-top: 12px;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+        .left {
+            width: 50%;
+            color: #909399;
+            font-size: 14px;
+        }
+
+        .right {
+
+            font-size: 14px;
+            line-height: 24px;
+            justify-content: flex-end;
+
+            span {
+                width: 30%;
+                margin-right: 10px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+
+            a {
+                color: #456fc4;
+                text-decoration: none;
+                cursor: pointer;
+            }
+
+
+        }
+    }
+
+    .removeBlindBoxBtn {
+        margin-top: 24px;
+        color: #fff !important;
+        background-color: #feb338 !important;
+    }
+
+    .amountTip {
+        margin-top: 10px;
+        align-items: center;
+        justify-content: center;
+        color: #909399;
+    }
+}

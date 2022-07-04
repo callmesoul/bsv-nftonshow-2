@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "strict": true,
+    "strictNullChecks": false,
+    "jsx": "preserve",
+    "sourceMap": false,
+    "lib": ["esnext", "dom"],
+    "types": ["vite/client", "node", "@intlify/vite-plugin-vue-i18n/client", "element-plus/global"],
+    "plugins": [{
+      "name": "@vuedx/typescript-plugin-vue"
+    }],
+    "paths": {
+      "@/*": ["./src/*"]
+    },
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+  },
+  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.vue"],
+  "exclude": ["node_modules", "dist", "public", "tests"]
+}

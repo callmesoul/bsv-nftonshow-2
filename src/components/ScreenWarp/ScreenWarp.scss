@@ -1,0 +1,302 @@
+@import '@/assets/styles/var.scss';
+
+.nft-list-warp {
+    background: #fff;
+    position: relative;
+
+    .screen {
+        width: 290px;
+        border-right: 1px solid #EDEFF2;
+        margin-right: 10px;
+
+        .el-skeleton__item {
+            height: 500px;
+        }
+
+        .screen-switch {
+            padding: 0 20px;
+            line-height: 60px;
+            font-size: 16px;
+            background: #fff;
+
+            .cont {
+                img {
+                    width: 22px;
+                    height: 22px;
+                    margin-right: 6px;
+                }
+            }
+
+            .switch {
+                font-size: 12px;
+                color: #606266;
+
+                img {
+                    width: 22px;
+                    height: 22px;
+                    cursor: pointer;
+                    margin-right: 5px;
+                }
+            }
+        }
+
+        .collapseitem-header {
+            flex: 1;
+
+            img {
+                width: 22px;
+                height: 22px;
+                margin-right: 6px;
+            }
+        }
+
+        :deep(.el-collapse) {
+            .el-collapse-item__header {
+                height: 60px;
+                line-height: 60px;
+                padding: 0 20px;
+                font-size: 16px;
+            }
+
+            .el-collapse-item__content {
+                padding: 20px;
+                background: #F5F7FA;
+            }
+        }
+    }
+
+    .list-warp {
+        padding: 20px;
+        border-left: 1px solid #EDEFF2;
+
+        .top {
+            .open-screen-btn {
+                color: #606266;
+                font-size: 18px;
+                margin-right: 15px;
+                cursor: pointer;
+
+
+                img {
+                    transform: rotate(180deg);
+                    // border: 1px solid #333;
+                }
+            }
+
+            .all-screen {
+                .el-tag {
+                    margin-right: 10px;
+
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                }
+            }
+
+            .cell-num {
+                margin-left: 20px;
+                border-radius: 8px;
+                overflow: hidden;
+                border: 1px solid #EDEFF2;
+                background: #fff;
+
+                .cell-num-item {
+                    display: inline-block;
+                    padding: 12px;
+                    cursor: pointer;
+
+                    &.active {
+                        background: #EDEFF2;
+                        cursor: not-allowed;
+                    }
+
+                    img {
+                        width: 16px;
+                        height: 16px;
+                    }
+                }
+            }
+        }
+
+        .sort {
+            .el-skeleton__item {
+                width: 200px;
+                height: 40px;
+            }
+        }
+    }
+}
+
+
+.screen-button-list {
+    .el-button {
+        margin-right: 20px;
+        margin-left: 0;
+        width: calc((100% - 20px) / 2);
+        box-sizing: border-box;
+        margin-bottom: 20px;
+
+        &:nth-child(2n) {
+            margin-right: 0;
+        }
+    }
+}
+
+
+.screen-price {
+    .screen-price-input {
+        margin-bottom: 10px;
+
+        span {
+            margin: 0 10px;
+        }
+    }
+}
+
+.screen-checkbox-list {
+    :deep(.el-checkbox) {
+        display: block;
+        padding: 5px 0;
+
+        .el-checkbox__label {
+            font-size: 15px;
+        }
+
+        .el-checkbox__original {
+            width: 16px;
+            height: 16px;
+            margin-right: 6px;
+        }
+    }
+}
+
+.sort-by {
+    cursor: pointer;
+    font-size: 15px;
+
+    img {
+        margin-left: 5px;
+        transform: rotate(90deg);
+        transition: all 0.5s;
+
+        &.active {
+            transform: rotate(-90deg);
+        }
+    }
+}
+
+.content-warp {
+    margin-top: 30px;
+}
+
+.nfts {
+    margin-top: 30px;
+}
+
+.nft {
+    margin-bottom: 20px;
+    cursor: pointer;
+
+    .nft-warp {
+        border: 1px solid #EDEFF2;
+        border-radius: 12px;
+
+        .cover {
+            width: 100%;
+            height: 0;
+            padding-bottom: 100%;
+            position: relative;
+            background: #000;
+            border-radius: 12px 12px 0 0;
+            overflow: hidden;
+
+            :deep(.el-image) {
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .cont {
+            padding: 12px;
+
+            .name {
+                @extend %text-ellipsis;
+            }
+
+            .user-list {
+                margin-top: 12px;
+
+                .user-item {
+                    margin-bottom: 6px;
+
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+
+                    .avatar {
+                        width: 18px;
+                        height: 18px;
+                        min-width: 18px;
+                        min-height: 18px;
+                        margin-right: 6px;
+                    }
+
+
+                    .label {
+                        white-space: nowrap;
+                        font-size: 12px;
+                        color: #606266;
+                    }
+
+                    .username {
+                        @extend %text-ellipsis;
+                        font-size: 12px;
+                        color: #606266;
+                    }
+                }
+
+            }
+
+            .operate {
+                margin-top: 18px;
+
+                img {
+                    width: 14px;
+                    height: 14px;
+                }
+
+                .el-button {
+                    font-size: 12px;
+
+
+                }
+
+                .like {
+                    cursor: pointer;
+
+                    img {
+                        margin-right: 2px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.pagination {
+    padding: 50px 0;
+}
+
+@media only screen and (max-width: 750px) {
+    .nft-list-warp {
+        .screen {
+            position: absolute;
+            z-index: 3;
+            width: 100%;
+            box-shadow: 0 10px 10px rgb(0 0 0 / 10%);
+        }
+    }
+}

@@ -1,0 +1,56 @@
+@import '../Create.scss';
+
+.textarea-skeleton {
+  height: 144px;
+}
+
+.item-skeleton {
+  height: 40px;
+}
+
+.button-skeleton {
+  width: 100%;
+  height: 60px;
+}
+
+.tab {
+  margin-top: 40px;
+
+  a {
+    font-size: 24px;
+    color: #909399;
+    margin-right: 25px;
+    font-weight: 500;
+
+    &.active {
+      color: #303133;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.form-title {
+  margin-bottom: 20px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #606266;
+}
+
+.priceTips {
+  display: flex;
+  flex-direction: column;
+  color: #606266;
+  font-size: 14px;
+  line-height: 22px;
+  word-break: break-all;
+
+}
+
+
+.increase {
+  width: 50px;
+  text-align: center;
+}

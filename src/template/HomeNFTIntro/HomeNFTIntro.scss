@@ -1,0 +1,76 @@
+.nft-muodle {
+    margin-bottom: 90px;
+
+    background: #F0F4F7;
+    padding: 60px 0;
+
+    .title {
+        font-size: 24px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .nft-module-list {
+        margin-top: 90px;
+
+        .nft-module-item {
+            text-align: center;
+
+            .nft-module-item-warp {
+                width: 160px;
+                margin: 0 auto;
+                text-align: center;
+            }
+
+            .icon {
+                img {
+                    width: 80px;
+                    height: 80px;
+                }
+            }
+
+            .name {
+                font-size: 18px;
+                font-weight: 500;
+                margin-top: 20px;
+            }
+
+            .drsc {
+                font-size: 14px;
+                font-weight: 400;
+                color: #909399;
+                margin-top: 8px;
+                line-height: 20px;
+
+                a {
+                    color: #456FC4;
+                    cursor: pointer;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 750px) {
+    .nft-muodle {
+        .container {
+            .nft-module-list {
+                margin-top: 45px;
+                display: block;
+
+                .nft-module-item {
+                    display: inline-block;
+                    width: 50%;
+                    padding: 20px 0;
+
+
+                    .drsc {
+                        font-size: 10px;
+                    }
+                }
+            }
+        }
+    }
+}

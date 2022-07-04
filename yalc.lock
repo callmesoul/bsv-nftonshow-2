@@ -1,0 +1,9 @@
+{
+  "version": "v1",
+  "packages": {
+    "metaidjs": {
+      "signature": "85a8ab067f29881208158f9dc28e625d",
+      "file": true
+    }
+  }
+}

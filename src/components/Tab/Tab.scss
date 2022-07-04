@@ -1,0 +1,48 @@
+@import '@/assets/styles/var.scss';
+
+#tabs {
+    text-align: center;
+    border-bottom: 1px solid #EDEFF2;
+    padding-bottom: 13px;
+    background: #fff;
+
+    .el-skeleton__item {
+        margin-right: 80px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    a {
+        font-size: 18px;
+        color: #606266;
+        padding-bottom: 13px;
+        margin-right: 80px;
+        cursor: pointer;
+        text-decoration: none;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        &.active,
+        &.router-link-active {
+            color: #303133;
+            position: relative;
+
+            &::after {
+                content: '';
+                display: block;
+                width: 24px;
+                height: 4px;
+                border-radius: 2px;
+                background: $mainColor;
+                position: absolute;
+                left: 50%;
+                bottom: 0;
+                margin-left: -12px;
+            }
+        }
+    }
+}

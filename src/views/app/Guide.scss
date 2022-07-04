@@ -1,0 +1,125 @@
+.app-guide {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 13;
+    background: #19191E;
+    box-sizing: border-box;
+
+    .app-guide-warp {
+        width: 100%;
+        max-width: 500px;
+        margin: 0 auto;
+        box-sizing: border-box;
+        position: relative;
+    }
+
+    .bg {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        z-index: -1;
+        margin-left: 180px;
+        margin-bottom: 100px;
+    }
+
+    .images {
+        position: relative;
+
+
+        .img1 {
+            width: 100%;
+            height: auto;
+            max-width: 360px;
+            display: block;
+            margin: 0 auto;
+        }
+    }
+
+    .logo {
+        margin-top: 64px;
+
+        img {
+            width: 120px;
+            height: auto;
+        }
+    }
+
+    .drsc {
+        font-size: 20px;
+        font-weight: bold;
+        line-height: 16px;
+        letter-spacing: 0em;
+        color: #D1D1D2;
+        margin-top: 20px;
+    }
+
+    .operate {
+        margin-top: 30px;
+
+        a {
+            margin-right: 10px;
+            height: 76px;
+            border-radius: 16px;
+            box-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
+            margin-top: 30px;
+            text-decoration: none;
+
+            &:first-child {
+                background: linear-gradient(270deg, #2AF598 0%, #2AF598 0%, #009EFD 100%, #009EFD 100%);
+            }
+
+            &:last-child {
+                margin-right: 0;
+                background: #26262E;
+                border: 1px solid #606266;
+            }
+
+            .title {
+                font-size: 20px;
+                font-weight: bold;
+                color: #FFFFFF;
+            }
+
+            .icon {
+                width: 32px;
+                height: 32px;
+                margin-right: 6px;
+            }
+
+            .subtitle {
+                color: #fff;
+                font-size: 16px;
+                margin-top: 5px;
+            }
+        }
+    }
+}
+
+.wxtip {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    background: #fff;
+
+    img {
+        width: 100%;
+    }
+
+    .operate {
+        padding: 16px;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        box-sizing: border-box;
+
+        .el-button {
+            width: 100%;
+        }
+    }
+}

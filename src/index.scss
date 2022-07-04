@@ -1,0 +1,607 @@
+@import '@/assets/styles/var.scss';
+@import '@/assets/styles/element-plus.scss';
+@import '@/assets/styles/flex.scss';
+@import '@/assets/styles/element-plus.scss';
+
+body {
+  background: $bgColor;
+  font-size: 14px;
+  color: $mainFontColor;
+  font-family: 'SF Pro', 'Helvetica Neue', Helvetica, 'PingFang SC', 'Hiragino Sans GB',
+    'Microsoft YaHei', '微软雅黑', Arial, sans-serif;
+
+  min-height: 100%;
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  #app {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+  }
+}
+
+pre {
+  white-space: break-spaces;
+  font-family: inherit;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+.nft-list,
+.bid-list {
+
+  .nft-item,
+  .bid-item {
+    display: inline-block;
+    width: calc((100% - (20px * 3)) / 4);
+    margin-right: 20px;
+    margin-bottom: 30px;
+    background: #fff;
+
+    &:nth-child(4n) {
+      margin-right: 0;
+    }
+  }
+}
+
+.page-footer {
+  margin-top: 60px;
+}
+
+.image-cropper {
+  z-index: 999;
+}
+
+.tags {
+  margin-right: 15px;
+
+  a {
+    display: inline-block;
+    padding: 8px 16px;
+    border-radius: 8px;
+    margin-right: 20px;
+    font-size: 14px;
+    cursor: pointer;
+    background: #ffffff;
+    line-height: normal;
+    margin: 5px;
+
+    &.active {
+      background: $mainColor;
+    }
+
+    &.add {
+      border-color: #fff;
+      border-style: dashed;
+    }
+
+    &.disabled {
+      background: #cbcccf;
+    }
+  }
+}
+
+
+
+.el-dialog {
+
+
+  &.app-modal {
+    position: relative;
+    height: 70vh;
+    max-width: 500px !important;
+    border-radius: 12px !important;
+    overflow: hidden;
+    display: flex;
+    background: #fff;
+
+    .el-dialog__body {
+      height: 100%;
+
+    }
+
+    .el-dialog__headerbtn {
+      width: 20px;
+      height: 20px;
+      display: inline-block;
+      text-align: center;
+      line-height: 20px;
+      z-index: 3;
+      top: 0;
+      margin-top: 16px;
+    }
+
+    iframe {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+    }
+  }
+}
+
+.tab {
+  text-align: center;
+
+  a {
+    display: inline-block;
+    padding: 15px;
+    font-size: 20px;
+    font-weight: 400;
+    margin-right: 90px;
+    cursor: pointer;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &.active {
+      position: relative;
+
+      &::after {
+        content: '';
+        display: block;
+        width: 10px;
+        height: 2px;
+        background: $mainColor;
+        border-radius: 2px;
+        position: absolute;
+        left: 50%;
+        margin-left: -5px;
+        bottom: 0;
+      }
+    }
+  }
+}
+
+.btn {
+  display: inline-block;
+  padding: 8px 14px;
+  border-radius: 6px;
+  text-align: center;
+  font-size: 14px;
+  background: $mainColor;
+  border: 1px solid $mainColor;
+  cursor: pointer;
+  overflow: hidden;
+
+  &.btn-wechat {
+    background: #5FB337;
+    border-color: #5FB337;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 18px;
+    text-align: center;
+  }
+
+  &.btn-gray {
+    background: #bfc2cc;
+    border-color: #bfc2cc;
+  }
+
+  &.btn-noColor {
+    background-color: #fff;
+    border-color: #FFA450;
+    color: #FFA450;
+  }
+
+  &.btn-black {
+    background: #303133;
+    border-color: #303133;
+    color: #fff;
+  }
+
+  &.btn-default {
+    background: #fff;
+    border-color: #fff;
+  }
+
+  &.btn-change {
+    background: #ffd712;
+    border-color: #ffd712;
+    color: #303133;
+  }
+
+  &.btn-error {
+    background: #fc3e05;
+    border-color: #fc3e05;
+    color: #fff;
+  }
+
+
+
+  &.btn-block {
+    display: block;
+    width: auto;
+    padding: 16px;
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  .icon-right {
+    margin-left: 10px;
+    width: 10px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  &.btn-min {
+    padding: 6px 10px;
+    font-size: 13px;
+  }
+
+  &.btn-plain {
+    background: #fff;
+    color: $mainColor;
+  }
+}
+
+.btn-group {
+  .btn {
+    margin-right: 30px;
+
+    &:last-child {
+      margin-right: 0;
+
+    }
+  }
+}
+
+.text-ellipsis {
+  @extend %text-ellipsis;
+}
+
+// logo
+.logo {
+  font-size: 18px;
+  font-weight: bold;
+  position: relative;
+  z-index: 2;
+  text-decoration: none;
+  color: inherit;
+
+  .zhImg {
+    width: 78px;
+    height: 22px;
+  }
+
+  .enImg {
+    width: 156px;
+    height: 22px;
+  }
+
+
+  span {
+    color: $mainColor;
+  }
+}
+
+
+.search-warp {
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+
+  input {
+    padding: 8px 12px;
+    font-size: 14px;
+    border: none;
+    outline: none;
+
+    &::placeholder {
+      color: #bfc2cc;
+    }
+  }
+
+  img {
+    width: 18px;
+    height: 18px;
+    margin-right: 12px;
+  }
+}
+
+.full-loading {
+  .el-loading-spinner {
+    .el-icon-loading {
+      color: $mainColor;
+      font-size: 60px;
+    }
+
+    .el-loading-text {
+      color: $mainColor;
+      font-size: 20px;
+      margin-top: 10px;
+    }
+  }
+}
+
+.section {
+  margin-bottom: 60px;
+
+  .section-header {
+    .title {
+      font-size: 30px;
+    }
+
+    .intro {
+      font-size: 14px;
+      font-weight: 400;
+      color: #909399;
+      margin-top: 10px;
+    }
+
+    .search-icon {
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  .section-screen {
+    margin-top: 30px;
+    font-size: 16px;
+
+    .sort {}
+  }
+
+  .section-cont {
+    margin-top: 30px;
+  }
+}
+
+.mt10 {
+  margin-top: 10px;
+}
+
+.mt30 {
+  margin-top: 30px;
+}
+
+.ml10 {
+  margin-left: 10px;
+}
+
+.mb10 {
+  margin-bottom: 10px;
+}
+
+.mb20 {
+  margin-bottom: 20px;
+}
+
+.mb5 {
+  margin-bottom: 5px;
+}
+
+.ml5 {
+  margin-left: 5px;
+}
+
+input[type='number'] {
+
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+  }
+
+  -moz-appearance: textfield;
+}
+
+.modal {
+  max-width: 480px;
+  max-height: 80vh;
+  display: flex;
+  flex-direction: column;
+
+  .el-dialog__header {
+    text-align: center;
+
+    .el-dialog__title {
+      font-size: 18px;
+      font-weight: 500;
+    }
+  }
+
+  .el-dialog__body {
+    padding-top: 0;
+    padding-bottom: 0;
+    flex: 1;
+    min-height: 0;
+    overflow-y: auto;
+  }
+}
+
+.el-dialog {
+
+  border-radius: 12px !important;
+  width: 90% !important;
+  max-width: 560px !important;
+
+  &.quickPayDialog {
+
+    width: 1100px !important;
+    max-width: 1100px !important;
+  }
+
+  @media screen and (max-width:500px) {
+    &.quickPayDialog {
+      width: 500px !important;
+      max-width: 500px !important;
+    }
+  }
+
+
+  &.blindBoxDialog {
+    max-width: 360px !important;
+  }
+
+  &.sendNftDialog {
+    max-width: 420px !important;
+  }
+
+  &.payModeDialog {
+    top: 10%;
+    max-width: 300px !important;
+  }
+
+  .el-dialog__close {
+    // border: 1px dashed #909399 !important;
+    font-weight: bold;
+    font-size: 20px;
+  }
+}
+
+.el-loading-spinner .path {
+  stroke: $mainColor;
+}
+
+.el-dropdown-menu__item:not(.is-disabled):hover,
+.el-dropdown-menu__item:focus {
+  background-color: #fff4e2;
+  color: $mainColor;
+}
+
+.el-drawer {
+  &.ttb {
+    height: auto !important;
+  }
+}
+
+.el-skeleton__image {
+  background: #edeff2;
+}
+
+.el-skeleton__text {
+  background: #f2f4f7 !important;
+}
+
+.el-button--primary {
+  color: #303133 !important;
+  background-color: $mainColor !important;
+  border-color: $mainColor !important;
+}
+
+.el-message-box {
+  border-radius: 8px !important;
+}
+
+
+.menu-drawer {
+  min-height: 200px;
+  width: 100%;
+
+  .serach-warp {
+    margin-left: 0;
+    padding: 0 20px;
+
+    .el-input {
+      width: 100%;
+    }
+  }
+
+  .el-drawer__body {
+    padding: 0;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 10px;
+}
+
+/*外层轨道。可以用display:none让其不显示，也可以添加背景图片，颜色改变显示效果*/
+::-webkit-scrollbar-track {
+  width: 0.06rem;
+  background-color: #eee;
+  -webkit-border-radius: 0em;
+  -moz-border-radius: 0em;
+  border-radius: 0em;
+}
+
+/*滚动条的设置*/
+::-webkit-scrollbar-thumb {
+  background-color: #fcd89e;
+  ;
+  background-clip: padding-box;
+  min-height: 0.28rem;
+  -webkit-border-radius: 1em;
+  -moz-border-radius: 1em;
+  border-radius: 1em;
+}
+
+/*滚动条移上去的背景*/
+::-webkit-scrollbar-thumb:hover {
+  background-color: #ffd99a;
+}
+
+.el-skeleton__image {
+  svg {
+    display: none;
+  }
+}
+
+.el-dialog__body {
+  color: #303133 !important;
+}
+
+.v-enter-from,
+.v-leave-to {
+  transition: opacity 0.5s ease;
+}
+
+.v-leave-from,
+.v-enter-to {
+  opacity: 0;
+}
+
+.common-popover {
+  max-width: 90%;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+
+@media only screen and (max-width: 1040px) {
+  .container {
+    padding: 0 30px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .main {}
+
+  .nft-list,
+  .bid-list {
+
+    .nft-item,
+    .bid-item {
+      width: calc((100% - (20px * 1)) / 2);
+
+      &:nth-child(4n) {
+        margin-right: 20px;
+      }
+
+      &:nth-child(3n) {
+        margin-right: 20px;
+      }
+
+      &:nth-child(2n) {
+        margin-right: 0px;
+      }
+    }
+  }
+}
