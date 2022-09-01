@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@chenfengyuan/vue-countdown": "^2.0.0-rc",
-    "@element-plus/icons-vue": "^0.2.7",
+    "@element-plus/icons-vue": "^2.0.9",
     "@j-t-mcc/vue3-chartjs": "^1.2.0",
     "@soerenmartius/vue3-clipboard": "^0.1.2",
     "@vue/reactivity": "^3.2.30",
