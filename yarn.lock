@@ -10,10 +10,10 @@
     "@jridgewell/gen-mapping" "^0.1.0"
     "@jridgewell/trace-mapping" "^0.3.9"
 
-"@antfu/install-pkg@^0.1.0":
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/@antfu/install-pkg/-/install-pkg-0.1.0.tgz#8d8c61820cbc32e5c37d82d515485ad3ee9bd052"
-  integrity sha512-VaIJd3d1o7irZfK1U0nvBsHMyjkuyMP3HKYVV53z8DKyulkHKmjhhtccXO51WSPeeSHIeoJEoNOKavYpS7jkZw==
+"@antfu/install-pkg@^0.1.1":
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/@antfu/install-pkg/-/install-pkg-0.1.1.tgz#157bb04f0de8100b9e4c01734db1a6c77e98bbb5"
+  integrity sha512-LyB/8+bSfa0DFGC06zpCEfs89/XoWZwws5ygEa5D+Xsm3OfI+aXQ86VgVG7Acyef+rSZ5HE7J8rrxzrQeM3PjQ==
   dependencies:
     execa "^5.1.1"
     find-up "^5.0.0"
@@ -32,10 +32,10 @@
   dependencies:
     "@types/throttle-debounce" "^2.1.0"
 
-"@antfu/utils@^0.5.0":
-  version "0.5.2"
-  resolved "https://registry.yarnpkg.com/@antfu/utils/-/utils-0.5.2.tgz#8c2d931ff927be0ebe740169874a3d4004ab414b"
-  integrity sha512-CQkeV+oJxUazwjlHD0/3ZD08QWKuGQkhnrKo3e6ly5pd48VUpXbb77q0xMU4+vc2CkJnDS02Eq/M9ugyX20XZA==
+"@antfu/utils@^0.7.2":
+  version "0.7.2"
+  resolved "https://registry.yarnpkg.com/@antfu/utils/-/utils-0.7.2.tgz#3bb6f37a6b188056fe9e2f363b6aa735ed65d7ca"
+  integrity sha512-vy9fM3pIxZmX07dL+VX1aZe7ynZ+YyB0jY+jE6r3hOK6GNY2t6W8rzpFC4tgpbXUYABkFQwgJq2XYXlxbXAI0g==
 
 "@apideck/better-ajv-errors@^0.3.1":
   version "0.3.3"
@@ -1033,22 +1033,22 @@
   resolved "https://registry.yarnpkg.com/@humanwhocodes/object-schema/-/object-schema-1.2.1.tgz#b520529ec21d8e5945a1851dfd1c32e94e39ff45"
   integrity sha512-ZnQMnLV4e7hDlUvw8H+U8ASL02SS2Gn6+9Ac3wGGLIe7+je2AeAOxPY+izIPJDfFDb7eDjev0Us8MO1iFRN8hA==
 
-"@iconify/types@^1.1.0":
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/@iconify/types/-/types-1.1.0.tgz#dc15fc988b1b3fd558dd140a24ede7e0aac11280"
-  integrity sha512-Jh0llaK2LRXQoYsorIH8maClebsnzTcve+7U3rQUSnC11X4jtPnFuyatqFLvMxZ8MLG8dB4zfHsbPfuvxluONw==
+"@iconify/types@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@iconify/types/-/types-2.0.0.tgz#ab0e9ea681d6c8a1214f30cd741fe3a20cc57f57"
+  integrity sha512-+wluvCrRhXrhyOmRDJ3q8mux9JkKy5SJ/v8ol2tu4FVjyYvtEzkc/3pK15ET6RKg4b4w4BmTk1+gsCUhf21Ykg==
 
-"@iconify/utils@^1.0.23":
-  version "1.0.32"
-  resolved "https://registry.yarnpkg.com/@iconify/utils/-/utils-1.0.32.tgz#ad6262478a27a4ff59f610a0c930710f3d7d970a"
-  integrity sha512-m+rnw7qKHq/XF7DAi4BcFoEAcXBfqqMgQJh8brGEHeqE/RUvgDMjmxsHgWnVpFsG+VmjGyAiI7nwXdliCwEU0Q==
+"@iconify/utils@^2.1.2":
+  version "2.1.4"
+  resolved "https://registry.yarnpkg.com/@iconify/utils/-/utils-2.1.4.tgz#dd6fb39363e275fa9502b6e0f84f77032ef4041f"
+  integrity sha512-7vzsYIvxv5Hng0MNEtSSnyMBD/+zqnORqmKiYsSgpMBGSz1r93URgBZHPYCZ1/gpoaVstYW4/SVLGCMJBNMCLQ==
   dependencies:
-    "@antfu/install-pkg" "^0.1.0"
-    "@antfu/utils" "^0.5.0"
-    "@iconify/types" "^1.1.0"
+    "@antfu/install-pkg" "^0.1.1"
+    "@antfu/utils" "^0.7.2"
+    "@iconify/types" "^2.0.0"
     debug "^4.3.4"
-    kolorist "^1.5.1"
-    local-pkg "^0.4.1"
+    kolorist "^1.7.0"
+    local-pkg "^0.4.3"
 
 "@intlify/bundle-utils@^1.0.0":
   version "1.0.0"
@@ -1943,6 +1943,11 @@ acorn@^8.4.1, acorn@^8.5.0:
   resolved "https://registry.yarnpkg.com/acorn/-/acorn-8.7.1.tgz#0197122c843d1bf6d0a5e83220a788f278f63c30"
   integrity sha512-Xx54uLJQZ19lKygFXOWsscKUbsBZW0CPykPhVQdhIeIwrbPmJzqeASDInc8nKBnp/JT6igTs82qPXz069H8I/A==
 
+acorn@^8.8.2:
+  version "8.8.2"
+  resolved "https://registry.yarnpkg.com/acorn/-/acorn-8.8.2.tgz#1b2f25db02af965399b9776b0c2c391276d37c4a"
+  integrity sha512-xjIYgE8HBrkpd/sJqOGNspf8uHG+NOHGOw6a/Urj8taM2EXfdNAH2oFcPeIFfsv3+kz/mJrS5VuMqbNLjCa2vw==
+
 agent-base@6:
   version "6.0.2"
   resolved "https://registry.yarnpkg.com/agent-base/-/agent-base-6.0.2.tgz#49fff58577cfee3f37176feab4c22e00f86d7f77"
@@ -2014,11 +2019,6 @@ ansi-escapes@^4.3.0:
   integrity sha512-gKXj5ALrKWQLsYG9jlTRmR/xKluxHV+Z9QEwNIgCfM1/uwPMCuzVVnh5mwTd+OuBZcwSIMbqssNWRm1lE51QaQ==
   dependencies:
     type-fest "^0.21.3"
-
-ansi-regex@*:
-  version "6.0.1"
-  resolved "https://registry.yarnpkg.com/ansi-regex/-/ansi-regex-6.0.1.tgz#3183e38fae9a65d7cb5e53945cd5897d0260a06a"
-  integrity sha512-n5M855fKb2SsfMIiFFoVrABHJC8QtHwVx+mHWP3QcEqBHYienj5dHSgjbxtC0WEZXYt4wcD6zrQElDPhFuZgfA==
 
 ansi-regex@^2.0.0:
   version "2.1.1"
@@ -5487,7 +5487,7 @@ import-meta-resolve@^1.1.1:
   dependencies:
     builtins "^4.0.0"
 
-imurmurhash@*, imurmurhash@^0.1.4:
+imurmurhash@^0.1.4:
   version "0.1.4"
   resolved "https://registry.yarnpkg.com/imurmurhash/-/imurmurhash-0.1.4.tgz#9218b9b2b928a238b13dc4fb6b6d576f231453ea"
   integrity sha1-khi5srkoojixPcT7a21XbyMUU+o=
@@ -6286,10 +6286,10 @@ known-css-properties@^0.5.0:
   resolved "https://registry.yarnpkg.com/known-css-properties/-/known-css-properties-0.5.0.tgz#6ff66943ed4a5b55657ee095779a91f4536f8084"
   integrity sha512-LOS0CoS8zcZnB1EjLw4LLqDXw8nvt3AGH5dXLQP3D9O1nLLA+9GC5GnPl5mmF+JiQAtSX4VyZC7KvEtcA4kUtA==
 
-kolorist@^1.5.1:
-  version "1.5.1"
-  resolved "https://registry.yarnpkg.com/kolorist/-/kolorist-1.5.1.tgz#c3d66dc4fabde4f6b7faa6efda84c00491f9e52b"
-  integrity sha512-lxpCM3HTvquGxKGzHeknB/sUjuVoUElLlfYnXZT73K8geR9jQbroGlSCFBax9/0mpGoD3kzcMLnOlGQPJJNyqQ==
+kolorist@^1.7.0:
+  version "1.7.0"
+  resolved "https://registry.yarnpkg.com/kolorist/-/kolorist-1.7.0.tgz#8e22bc470ea2d2743dbd461808f8b5246b19f5f4"
+  integrity sha512-ymToLHqL02udwVdbkowNpzjFd6UzozMtshPQKVi5k1EjKRqKqBrOnE9QbLEb0/pV76SAiIT13hdL8R6suc+f3g==
 
 latest-version@^3.0.0:
   version "3.1.0"
@@ -6469,10 +6469,10 @@ local-pkg@^0.1.0:
   dependencies:
     mlly "^0.2.2"
 
-local-pkg@^0.4.1:
-  version "0.4.1"
-  resolved "https://registry.yarnpkg.com/local-pkg/-/local-pkg-0.4.1.tgz#e7b0d7aa0b9c498a1110a5ac5b00ba66ef38cfff"
-  integrity sha512-lL87ytIGP2FU5PWwNDo0w3WhIo2gopIAxPg9RxDYF7m4rr5ahuZxP22xnJHIvaLTe4Z9P6uKKY2UHiwyB4pcrw==
+local-pkg@^0.4.1, local-pkg@^0.4.3:
+  version "0.4.3"
+  resolved "https://registry.yarnpkg.com/local-pkg/-/local-pkg-0.4.3.tgz#0ff361ab3ae7f1c19113d9bb97b98b905dbc4963"
+  integrity sha512-SFppqq5p42fe2qcZQqqEOiVRXl+WCP1MdT6k7BDEW1j++sp5fIY+/fdRQitvKgB5BrBcmrs5m/L0v2FrU5MY1g==
 
 locate-path@^2.0.0:
   version "2.0.0"
@@ -6825,7 +6825,7 @@ merge2@^1.3.0, merge2@^1.4.1:
   integrity sha512-8q7VEgMJW4J8tcfVPy8g09NcQwZdbwFEqhe/WZkoIzjn/3TGDwtOCYtXGxA3O8tPzpczCCDgv+P2P5y00ZJOOg==
 
 "metaidjs@file:.yalc/metaidjs":
-  version "1.15.2"
+  version "1.15.4"
 
 micromark@~2.11.0:
   version "2.11.4"
@@ -10353,18 +10353,18 @@ unplugin-element-plus@^0.2.0:
     magic-string "^0.25.7"
     unplugin "^0.3.0"
 
-unplugin-icons@^0.13.0:
-  version "0.13.4"
-  resolved "https://registry.yarnpkg.com/unplugin-icons/-/unplugin-icons-0.13.4.tgz#dbf036e7af78495ebb8fb8bbc448b653c8441e39"
-  integrity sha512-gyp5H4WADnXEE1uk8+NW6gnnALOlSpU8M5GwzNCYbUgjM4QudjcFbacHKuuqETk4VeSJyzM9Z2ufbuZFMuxvuQ==
+unplugin-icons@^0.15.3:
+  version "0.15.3"
+  resolved "https://registry.yarnpkg.com/unplugin-icons/-/unplugin-icons-0.15.3.tgz#0d7d0cbcd6c420c2638d6a95f9929e75e66f86e6"
+  integrity sha512-YWgJqv5AahrokeOnta8uX/m1damZA6Rf6zPClgHg2Fa/45iyOe3Lj+Wn/Ba+CSsq9yBffn17YfKfJNyWCNZPvw==
   dependencies:
-    "@antfu/install-pkg" "^0.1.0"
-    "@antfu/utils" "^0.5.0"
-    "@iconify/utils" "^1.0.23"
-    debug "^4.3.3"
-    kolorist "^1.5.1"
-    local-pkg "^0.4.1"
-    unplugin "^0.4.0"
+    "@antfu/install-pkg" "^0.1.1"
+    "@antfu/utils" "^0.7.2"
+    "@iconify/utils" "^2.1.2"
+    debug "^4.3.4"
+    kolorist "^1.7.0"
+    local-pkg "^0.4.3"
+    unplugin "^1.0.1"
 
 unplugin-vue-components@^0.15.4:
   version "0.15.6"
@@ -10396,13 +10396,15 @@ unplugin@^0.3.0:
   dependencies:
     webpack-virtual-modules "^0.4.3"
 
-unplugin@^0.4.0:
-  version "0.4.0"
-  resolved "https://registry.yarnpkg.com/unplugin/-/unplugin-0.4.0.tgz#43a923f0267f8834118a926c406131d1d84a1358"
-  integrity sha512-4ScITEmzlz1iZW3tkz+3L1V5k/xMQ6kjgm4lEXKxH0ozd8/OUWfiSA7RMRyrawsvq/t50JIzPpp1UyuSL/AXkA==
+unplugin@^1.0.1:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/unplugin/-/unplugin-1.1.0.tgz#96a14aa52d7637a56a88dec6baf4a73902f2db87"
+  integrity sha512-I8obQ8Rs/hnkxokRV6g8JKOQFgYNnTd9DL58vcSt5IJ9AkK8wbrtsnzD5hi4BJlvcY536JzfEXj9L6h7j559/A==
   dependencies:
+    acorn "^8.8.2"
     chokidar "^3.5.3"
-    webpack-virtual-modules "^0.4.3"
+    webpack-sources "^3.2.3"
+    webpack-virtual-modules "^0.5.0"
 
 unset-value@^1.0.0:
   version "1.0.0"
@@ -10770,6 +10772,11 @@ webpack-virtual-modules@^0.4.3:
   version "0.4.3"
   resolved "https://registry.yarnpkg.com/webpack-virtual-modules/-/webpack-virtual-modules-0.4.3.tgz#cd597c6d51d5a5ecb473eea1983a58fa8a17ded9"
   integrity sha512-5NUqC2JquIL2pBAAo/VfBP6KuGkHIZQXW/lNKupLPfhViwh8wNsu0BObtl09yuKZszeEUfbXz8xhrHvSG16Nqw==
+
+webpack-virtual-modules@^0.5.0:
+  version "0.5.0"
+  resolved "https://registry.yarnpkg.com/webpack-virtual-modules/-/webpack-virtual-modules-0.5.0.tgz#362f14738a56dae107937ab98ea7062e8bdd3b6c"
+  integrity sha512-kyDivFZ7ZM0BVOUteVbDFhlRt7Ah/CSPwJdi8hBpkK7QLumUqdLtVfm/PX/hkcnrvr0i77fO5+TjZ94Pe+C9iw==
 
 webpack@^5.69.1:
   version "5.72.1"
